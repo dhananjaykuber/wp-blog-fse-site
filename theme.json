@@ -1,0 +1,150 @@
+{
+	"$schema": "https://schemas.wp.org/wp/6.6/theme.json",
+	"settings": {
+		"appearanceTools": true,
+		"spacing": {
+			"units": ["%", "px", "em", "rem", "vh", "vw"]
+		},
+		"color": {
+			"palette": [
+				{
+					"color": "#fff",
+					"name": "White",
+					"slug": "white"
+				},
+				{
+					"color": "#17191f",
+					"name": "Dark Gray",
+					"slug": "dark-gray"
+				},
+				{
+					"color": "#637695",
+					"name": "Blue Gray",
+					"slug": "blue-gray"
+				},
+				{
+					"color": "#050411",
+					"name": "Dark Blue",
+					"slug": "dark-blue"
+				},
+				{
+					"color": "#858e97",
+					"name": "Light Gray",
+					"slug": "light-gray"
+				}
+			]
+		},
+		"typography": {
+			"fluid": true,
+			"fontFamilies": [
+				{
+					"fontFace": [
+						{
+							"fontFamily": "UniversalSans",
+							"fontStretch": "normal",
+							"fontStyle": "normal",
+							"fontWeight": "500",
+							"src": ["file:./assets/fonts/UniversalSans-Headlines.woff"]
+						},
+						{
+							"fontFamily": "UniversalSans",
+							"fontStyle": "normal",
+							"fontWeight": "500",
+							"src": ["file:./assets/fonts/UniversalSans-500-Headlines.woff"]
+						},
+						{
+							"fontFamily": "UniversalSans",
+							"fontStyle": "normal",
+							"fontWeight": "740",
+							"src": ["file:./assets/fonts/UniversalSans-Headlines.woff"]
+						},
+						{
+							"fontFamily": "UniversalSans",
+							"fontStyle": "normal",
+							"fontWeight": "740",
+							"src": ["file:./assets/fonts/UniversalSans-740-Headlines.woff"]
+						}
+					],
+					"fontFamily": "\"UniversalSans\", serif",
+					"name": "UniversalSans",
+					"slug": "body"
+				},
+				{
+					"fontFamily": "-apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif",
+					"name": "System Sans-serif",
+					"slug": "system-sans-serif"
+				},
+				{
+					"fontFamily": "Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol",
+					"name": "System Serif",
+					"slug": "system-Serif"
+				}
+			],
+			"fontSizes": [
+				{
+					"name": "16px",
+					"size": "1rem",
+					"slug": "16"
+				},
+				{
+					"name": "20px",
+					"size": "1.25rem",
+					"slug": "20"
+				},
+				{
+					"name": "22px",
+					"size": "1.375rem",
+					"slug": "22"
+				},
+				{
+					"name": "24px",
+					"size": "1.5rem",
+					"slug": "24"
+				},
+				{
+					"name": "28px",
+					"size": "1.75rem",
+					"slug": "28"
+				},
+				{
+					"name": "30px",
+					"size": "1.875rem",
+					"slug": "30"
+				},
+				{
+					"name": "32px",
+					"size": "2rem",
+					"slug": "32"
+				},
+				{
+					"name": "40px",
+					"size": "2.5rem",
+					"slug": "40"
+				},
+				{
+					"name": "52px",
+					"size": "3.25rem",
+					"slug": "52"
+				},
+				{
+					"name": "74px",
+					"size": "4.625rem",
+					"slug": "74"
+				}
+			],
+			"writingMode": true
+		},
+		"useRootPaddingAwareAlignments": true
+	},
+	"templateParts": [
+		{
+			"area": "header",
+			"name": "header"
+		},
+		{
+			"area": "footer",
+			"name": "footer"
+		}
+	],
+	"version": 3
+}

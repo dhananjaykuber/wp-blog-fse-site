@@ -1,0 +1,40 @@
+{
+	"name": "starter-block-theme",
+	"version": "1.0.0",
+	"description": "Starter Block (FSE) Theme",
+	"scripts": {
+		"build": "wp-scripts build --webpack-copy-php --webpack-src-dir=assets/src --output-path=assets/build",
+		"check-engines": "wp-scripts check-engines",
+		"check-licenses": "wp-scripts check-licenses",
+		"format": "wp-scripts format",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"lint:md:docs": "wp-scripts lint-md-docs",
+		"lint:pkg-json": "wp-scripts lint-pkg-json",
+		"packages-update": "wp-scripts packages-update",
+		"start": "wp-scripts start --webpack-copy-php --webpack-src-dir=assets/src --output-path=assets/build",
+		"test:e2e": "wp-scripts test-e2e",
+		"test:unit": "wp-scripts test-unit-js",
+		"create:block": "node bin/block-scaffold/block.js"
+	},
+	"keywords": [
+		"fse",
+		"block-based",
+		"gutenberg",
+		"full-site-editing"
+	],
+	"author": "Dhananjay Kuber",
+	"license": "GPL-2.0-or-later",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/dhananjaykuber/starter-block-theme"
+	},
+	"bugs": {
+		"url": "https://github.com/dhananjaykuber/starter-block-theme/issues"
+	},
+	"devDependencies": {
+		"@wordpress/scripts": "^30.9.0",
+		"clean-webpack-plugin": "^4.0.0",
+		"glob": "^11.0.1"
+	}
+}

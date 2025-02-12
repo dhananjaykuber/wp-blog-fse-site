@@ -1,0 +1,15 @@
+<?php
+/**
+ * {{title}} render callback.
+ *
+ * @package {{namespace}}
+ */
+
+$current_time = current_time( 'mysql' );
+
+?>
+
+<div <?php echo get_block_wrapper_attributes(); ?>>
+    <h1>Hello from {{title}}</h1>
+    <p>Current time: <?php echo esc_html( date( 'F j, Y g:i a', strtotime( $current_time ) ) ); ?></p>
+</div>

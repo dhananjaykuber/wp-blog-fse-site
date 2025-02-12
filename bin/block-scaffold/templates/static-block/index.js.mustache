@@ -1,0 +1,20 @@
+/**
+ * WordPress dependencies
+ */
+import { registerBlockType } from "@wordpress/blocks";
+
+/**
+ * Internal dependencies
+ */
+import Edit from "./edit";
+import save from './save';
+
+/**
+ * Styles
+ */
+import "./view.scss";
+
+registerBlockType('{{namespace}}/{{slug}}', {
+	edit: Edit,
+	save,
+});
