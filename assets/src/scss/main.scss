@@ -3,6 +3,7 @@
 @import "./globals/reusable-styles";
 @import "./partials/category-list";
 @import "./partials/query-loop";
+@import "./partials/query-pagination";
 
 * {
 	font-family: var(--wp--preset--font-family--body);

@@ -113,8 +113,15 @@ class Blocks {
 			array(
 				'block' => 'core/categories',
 				'style' => array(
-					'name'  => 'category-list',
-					'label' => __( 'Category List', 'starter-block-theme' ),
+					'name'  => 'category-list-dark',
+					'label' => __( 'Category List dark', 'starter-block-theme' ),
+				),
+			),
+			array(
+				'block' => 'core/categories',
+				'style' => array(
+					'name'  => 'category-list-light',
+					'label' => __( 'Category List Light', 'starter-block-theme' ),
 				),
 			),
 			array(
@@ -143,6 +150,20 @@ class Blocks {
 				'style' => array(
 					'name'  => 'slider-query-loop',
 					'label' => __( 'Slider Query Loop', 'starter-block-theme' ),
+				),
+			),
+			array(
+				'block' => 'core/query',
+				'style' => array(
+					'name'  => 'archive-query-loop',
+					'label' => __( 'Archive Query Loop', 'starter-block-theme' ),
+				),
+			),
+			array(
+				'block' => 'core/query-pagination',
+				'style' => array(
+					'name'  => 'archive-posts-pagination',
+					'label' => __( 'Archive Posts Pagination', 'starter-block-theme' ),
 				),
 			),
 		);

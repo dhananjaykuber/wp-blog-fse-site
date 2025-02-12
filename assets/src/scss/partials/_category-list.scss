@@ -1,4 +1,4 @@
-.is-style-category-list {
+.wp-block-categories-list {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 15px;
@@ -6,7 +6,6 @@
 
 	li {
 		a {
-			color: #fff;
 			text-decoration: none;
 			padding-bottom: 8px;
 
@@ -21,13 +20,45 @@
 				height: 1px;
 				bottom: 0;
 				left: 0;
-				background-color: #fff;
 				transition: transform 0.25s ease-out;
 			}
 
 			&:hover::after {
 				transform: scaleX(1);
 				transform-origin: bottom left;
+			}
+		}
+
+		&.current-cat {
+			border-bottom: 1px solid $color-dark-gray;
+
+			a {
+				&:hover::after {
+					transform: scaleX(0);
+				}
+			}
+		}
+	}
+}
+
+.is-style-category-list-dark {
+	li {
+		a {
+			color: #fff;
+			&::after {
+				background-color: #fff;
+			}
+		}
+	}
+}
+
+.is-style-category-list-light {
+	li {
+		a {
+			color: $color-dark-gray;
+
+			&::after {
+				background-color: $color-dark-gray;
 			}
 		}
 	}

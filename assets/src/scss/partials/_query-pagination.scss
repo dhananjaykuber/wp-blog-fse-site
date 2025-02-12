@@ -1,0 +1,28 @@
+.is-style-archive-posts-pagination {
+	.wp-block-query-pagination-numbers {
+		.page-numbers {
+			padding: 10px;
+			width: 20px;
+			height: 20px;
+			display: inline-block;
+			text-align: center;
+			border-radius: 50px;
+			text-decoration: none;
+			color: $color-dark-gray;
+			margin: 0 4px;
+
+			&.current {
+				background: $color-dark-gray;
+				color: $color-white;
+			}
+		}
+	}
+
+	.wp-block-query-pagination-next,
+	.wp-block-query-pagination-previous {
+		span {
+			font-size: 25px;
+			color: $color-dark-gray;
+		}
+	}
+}

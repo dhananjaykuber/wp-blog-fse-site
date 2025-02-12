@@ -2,8 +2,6 @@ jQuery(document).ready(function ($) {
 	$(".is-style-slider-query-loop ul").slick({
 		slidesToShow: 1.5,
 		slidesToScroll: 1,
-		arrows: true,
-		dots: true,
 		infinite: false,
 		speed: 500,
 		cssEase: "ease",
