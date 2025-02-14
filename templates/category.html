@@ -1,6 +1,6 @@
-<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|50"},"margin":{"top":"0","bottom":"0"}}},"backgroundColor":"white","layout":{"type":"constrained","contentSize":"85vw"}} -->
+<!-- wp:group {"className":"is-style-contained-container","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|50"},"margin":{"top":"0","bottom":"0"}}},"backgroundColor":"white","layout":{"type":"constrained","contentSize":"85vw"}} -->
 <div
-	class="wp-block-group has-white-background-color has-background"
+	class="wp-block-group is-style-contained-container has-white-background-color has-background"
 	style="
 		margin-top: 0;
 		margin-bottom: 0;
@@ -9,6 +9,8 @@
 	"
 >
 	<!-- wp:categories {"className":"is-style-category-list is-style-category-list-light","style":{"spacing":{"margin":{"bottom":"var:preset|spacing|70"},"padding":{"top":"0","bottom":"0","left":"0","right":"0"}}},"fontSize":"22"} /-->
+
+	<!-- wp:categories {"displayAsDropdown":true,"showLabel":false,"className":"is-style-category-list is-style-category-list-dropdown-light","style":{"spacing":{"margin":{"bottom":"var:preset|spacing|70","top":"0","right":"0","left":"0"},"padding":{"top":"0","bottom":"0","left":"0","right":"0"}}},"fontSize":"22"} /-->
 
 	<!-- wp:query-title {"type":"archive","showPrefix":false,"style":{"elements":{"link":{"color":{"text":"var:preset|color|dark-blue"}}}},"textColor":"dark-blue","fontSize":"74"} /-->
 
@@ -52,9 +54,9 @@
 </div>
 <!-- /wp:group -->
 
-<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|80"}}},"layout":{"type":"constrained","contentSize":"85vw"}} -->
+<!-- wp:group {"className":"is-style-contained-container","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|80"}}},"layout":{"type":"constrained","contentSize":"85vw"}} -->
 <div
-	class="wp-block-group"
+	class="wp-block-group is-style-contained-container"
 	style="
 		padding-top: var(--wp--preset--spacing--80);
 		padding-bottom: var(--wp--preset--spacing--80);
@@ -69,7 +71,7 @@
 	</h2>
 	<!-- /wp:heading -->
 
-	<!-- wp:query {"queryId":1,"query":{"perPage":6,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true},"className":"is-style-archive-query-loop"} -->
+	<!-- wp:query {"queryId":1,"query":{"perPage":10,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true},"className":"is-style-archive-query-loop"} -->
 	<div class="wp-block-query is-style-archive-query-loop">
 		<!-- wp:post-template -->
 		<!-- wp:post-featured-image {"style":{"spacing":{"margin":{"top":"0","bottom":"var:preset|spacing|40"}}}} /-->
