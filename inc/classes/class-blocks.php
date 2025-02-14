@@ -194,6 +194,41 @@ class Blocks {
 					'label' => __( 'Contained Container With Background', 'starter-block-theme' ),
 				),
 			),
+			array(
+				'block' => 'core/separator',
+				'style' => array(
+					'name'  => 'single-dot-separator',
+					'label' => __( 'Single Dot', 'starter-block-theme' ),
+				),
+			),
+			array(
+				'block' => 'core/columns',
+				'style' => array(
+					'name'  => 'single-post-content-columns',
+					'label' => __( 'Single Post Content Columns', 'starter-block-theme' ),
+				),
+			),
+			array(
+				'block' => 'core/column',
+				'style' => array(
+					'name'  => 'toc-column',
+					'label' => __( 'Table Of Content Column', 'starter-block-theme' ),
+				),
+			),
+			array(
+				'block' => 'core/column',
+				'style' => array(
+					'name'  => 'post-content-column',
+					'label' => __( 'Post Content Column', 'starter-block-theme' ),
+				),
+			),
+			array(
+				'block' => 'core/column',
+				'style' => array(
+					'name'  => 'socials-column',
+					'label' => __( 'Socials Column', 'starter-block-theme' ),
+				),
+			),
 		);
 
 		foreach ( $block_styles as $block_style ) {

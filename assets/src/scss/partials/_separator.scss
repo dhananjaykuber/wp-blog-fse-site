@@ -1,0 +1,10 @@
+.is-style-single-dot-separator {
+	border: none;
+	width: fit-content !important;
+
+	&::before {
+		color: $color-light-gray;
+		content: "·";
+		font-size: 1.5em;
+	}
+}

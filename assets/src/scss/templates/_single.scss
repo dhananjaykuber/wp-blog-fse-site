@@ -1,0 +1,21 @@
+.is-style-single-post-content-columns {
+	position: relative;
+
+	.is-style-toc-column,
+	.is-style-socials-column {
+		position: sticky;
+		top: 10px;
+		height: calc(100vh - 60px);
+		overflow-y: auto;
+
+		@media (max-width: 781px) {
+			position: relative;
+			height: auto;
+		}
+	}
+
+	.is-style-post-content-column {
+		flex: 1;
+		overflow-y: auto;
+	}
+}

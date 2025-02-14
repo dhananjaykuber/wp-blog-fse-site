@@ -1,0 +1,33 @@
+.wp-block-post-content {
+	color: $color-dark-blue;
+
+	p,
+	span,
+	a,
+	em {
+		font-size: $font-20;
+		line-height: 1.875rem;
+	}
+
+	a {
+		color: $color-blue-gray;
+		border-bottom: 1px solid $color-blue-gray;
+		padding-bottom: 1px;
+		text-decoration: none;
+	}
+
+	h2 {
+		font-size: $font-40;
+	}
+
+	h3 {
+		font-size: $font-28;
+	}
+
+	ul {
+		li {
+			margin-bottom: 8px;
+			word-break: break-all;
+		}
+	}
+}
