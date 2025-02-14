@@ -1,0 +1,38 @@
+/**
+ * The following styles get applied both on the frontend and editor.
+ */
+
+@import "../../scss/globals/variables";
+
+.wp-block-blog-theme-25-table-of-content {
+	ul {
+		padding: 0 20px 20px;
+		margin: 0;
+
+		li {
+			padding: 6px 0;
+			list-style: none;
+			transition: 0.5s all ease-in-out;
+
+			a {
+				text-decoration: none;
+				font-size: $font-16;
+				color: $color-blue-gray;
+			}
+
+			&.active {
+				a {
+					color: $color-dark-blue;
+				}
+
+				list-style: disc;
+			}
+
+			&:hover {
+				a {
+					color: $color-dark-blue;
+				}
+			}
+		}
+	}
+}

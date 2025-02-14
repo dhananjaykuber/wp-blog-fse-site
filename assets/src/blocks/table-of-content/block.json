@@ -1,0 +1,25 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "blog-theme-25/table-of-content",
+  "version": "0.1.0",
+  "title": "Table Of Content",
+  "category": "theme",
+  "icon": "smiley",
+  "description": "A table of content",
+  "keywords": [
+    "example",
+    "block"
+  ],
+  "example": {},
+  "supports": {
+    "html": false
+  },
+  "attributes": {},
+  "textdomain": "starter-block-theme",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./view.css",
+  "viewScript": "file:./view.js",
+  "render": "file:./render.php"
+}

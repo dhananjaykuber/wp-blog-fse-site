@@ -4,6 +4,10 @@
 @import "./partials/category-list";
 @import "./partials/query-loop";
 @import "./partials/query-pagination";
+@import "./partials/group";
+@import "./partials/separator";
+@import "./partials/post-content";
+@import "./templates/single";
 
 .editor-styles-wrapper {
 	font-family: var(--wp--preset--font-family--body);

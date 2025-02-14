@@ -1,0 +1,19 @@
+/**
+ * The following styles get applied inside the editor only.
+ */
+
+@import "../../scss/globals/variables";
+
+.wp-block-blog-theme-25-table-of-content {
+	ul {
+		li {
+			&:first-child {
+				list-style: disc;
+
+				a {
+					color: $color-dark-blue;
+				}
+			}
+		}
+	}
+}
