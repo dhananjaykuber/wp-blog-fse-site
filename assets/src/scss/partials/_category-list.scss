@@ -39,6 +39,10 @@
 			}
 		}
 	}
+
+	@media screen and (max-width: $screen-md) {
+		display: none;
+	}
 }
 
 .is-style-category-list-dark {
@@ -61,5 +65,33 @@
 				background-color: $color-dark-gray;
 			}
 		}
+	}
+}
+
+.wp-block-categories-dropdown {
+	margin-top: -20px !important;
+
+	select {
+		background: none;
+		border: none;
+		font-size: $font-24;
+		outline: none;
+		padding-right: 20px;
+	}
+
+	&.is-style-category-list-dropdown-dark {
+		select {
+			color: $color-white;
+		}
+	}
+
+	&.is-style-category-list-dropdown-light {
+		select {
+			color: $color-dark-gray;
+		}
+	}
+
+	@media screen and (min-width: $screen-md) {
+		display: none;
 	}
 }

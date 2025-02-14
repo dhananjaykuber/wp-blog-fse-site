@@ -1,0 +1,19 @@
+.is-style-contained-container {
+	margin-left: auto;
+	margin-right: auto;
+	width: 85vw;
+	max-width: 1500px;
+}
+
+.is-style-contained-container-width-bg {
+	width: 100% !important;
+	max-width: none !important;
+	padding: 2rem 0;
+
+	> * {
+		margin-left: auto;
+		margin-right: auto;
+		width: 85vw;
+		max-width: 1500px;
+	}
+}
