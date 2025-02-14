@@ -122,6 +122,11 @@
 					"slug": "40"
 				},
 				{
+					"name": "45px",
+					"size": "2.813rem",
+					"slug": "45"
+				},
+				{
 					"name": "52px",
 					"size": "3.25rem",
 					"slug": "52"

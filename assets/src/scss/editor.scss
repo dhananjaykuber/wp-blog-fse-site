@@ -8,6 +8,7 @@
 @import "./partials/separator";
 @import "./partials/post-content";
 @import "./templates/single";
+@import "./globals/extra-classes";
 
 .editor-styles-wrapper {
 	font-family: var(--wp--preset--font-family--body);
