@@ -1,12 +1,62 @@
-<!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
-<div class="wp-block-group">
-	<!-- wp:group {"layout":{"type":"flex","orientation":"vertical"}} -->
-	<div class="wp-block-group">
-		<!-- wp:site-title {"fontFamily":"body"} /-->
-		<!-- wp:site-tagline /-->
-	</div>
-	<!-- /wp:group -->
+<!-- wp:group {"className":"is-style-contained-container-width-bg","style":{"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70"}}},"backgroundColor":"dark-gray","layout":{"type":"constrained"}} -->
+<div
+	class="wp-block-group is-style-contained-container-width-bg has-dark-gray-background-color has-background"
+	style="
+		padding-top: var(--wp--preset--spacing--70);
+		padding-bottom: var(--wp--preset--spacing--70);
+	"
+>
+	<!-- wp:columns {"verticalAlignment":"center"} -->
+	<div class="wp-block-columns are-vertically-aligned-center">
+		<!-- wp:column {"verticalAlignment":"center"} -->
+		<div class="wp-block-column is-vertically-aligned-center">
+			<!-- wp:group {"layout":{"type":"flex","orientation":"vertical"}} -->
+			<div class="wp-block-group">
+				<!-- wp:heading {"style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white","fontSize":"52","fontFamily":"body"} -->
+				<h2
+					class="wp-block-heading has-white-color has-text-color has-link-color has-body-font-family has-52-font-size"
+				>
+					Let's Talk
+				</h2>
+				<!-- /wp:heading -->
 
-	<!-- wp:navigation {"ref":7,"fontFamily":"body"} /-->
+				<!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white","fontSize":"20"} -->
+				<p
+					class="has-white-color has-text-color has-link-color has-20-font-size"
+				>
+					hello@blogsite.com
+				</p>
+				<!-- /wp:paragraph -->
+			</div>
+			<!-- /wp:group -->
+		</div>
+		<!-- /wp:column -->
+
+		<!-- wp:column {"verticalAlignment":"center"} -->
+		<div class="wp-block-column is-vertically-aligned-center">
+			<!-- wp:social-links {"iconColor":"white","iconColorValue":"#ffffff","className":"is-style-logos-only","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|60"}}},"layout":{"type":"flex","justifyContent":"right"}} -->
+			<ul class="wp-block-social-links has-icon-color is-style-logos-only">
+				<!-- wp:social-link {"url":"https://x.com/","service":"x"} /-->
+
+				<!-- wp:social-link {"url":"https://profiles.wordpress.org/","service":"wordpress"} /-->
+
+				<!-- wp:social-link {"url":"https://instagram.com/","service":"instagram"} /-->
+
+				<!-- wp:social-link {"url":"https://www.facebook.com/","service":"facebook"} /-->
+			</ul>
+			<!-- /wp:social-links -->
+
+			<!-- wp:paragraph {"align":"right","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}},"spacing":{"padding":{"top":"var:preset|spacing|40"}}},"textColor":"white"} -->
+			<p
+				class="has-text-align-right has-white-color has-text-color has-link-color"
+				style="padding-top: var(--wp--preset--spacing--40)"
+			>
+				© 2025 Blog Site, Inc
+			</p>
+			<!-- /wp:paragraph -->
+		</div>
+		<!-- /wp:column -->
+	</div>
+	<!-- /wp:columns -->
 </div>
 <!-- /wp:group -->
