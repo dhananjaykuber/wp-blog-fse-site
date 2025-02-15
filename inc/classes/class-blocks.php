@@ -211,8 +211,8 @@ class Blocks {
 			array(
 				'block' => 'core/column',
 				'style' => array(
-					'name'  => 'toc-column',
-					'label' => __( 'Table Of Content Column', 'starter-block-theme' ),
+					'name'  => 'static-column',
+					'label' => __( 'Static Column', 'starter-block-theme' ),
 				),
 			),
 			array(
@@ -220,13 +220,6 @@ class Blocks {
 				'style' => array(
 					'name'  => 'post-content-column',
 					'label' => __( 'Post Content Column', 'starter-block-theme' ),
-				),
-			),
-			array(
-				'block' => 'core/column',
-				'style' => array(
-					'name'  => 'socials-column',
-					'label' => __( 'Socials Column', 'starter-block-theme' ),
 				),
 			),
 		);

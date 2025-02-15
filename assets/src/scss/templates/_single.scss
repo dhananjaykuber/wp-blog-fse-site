@@ -1,8 +1,7 @@
 .is-style-single-post-content-columns {
 	position: relative;
 
-	.is-style-toc-column,
-	.is-style-socials-column {
+	.is-style-static-column {
 		position: sticky;
 		top: 10px;
 		height: calc(100vh - 60px);
