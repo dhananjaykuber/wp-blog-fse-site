@@ -84,16 +84,20 @@ class Assets {
 		wp_register_style(
 			'slick-carousel-theme',
 			'//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css',
-			array('slick-carousel'),
+			array( 'slick-carousel' ),
 			'1.8.1'
 		);
 		wp_register_script(
 			'slick-carousel',
 			'//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js',
-			array('jquery'),
+			array( 'jquery' ),
 			'1.8.1',
 			true
 		);
+
+		if ( is_single() ) {
+			$this->localize_post_categories();
+		}
 	}
 
 	/**
@@ -105,7 +109,7 @@ class Assets {
 
 		wp_enqueue_style( 'starter-fse-theme-styles' );
 		wp_enqueue_style( 'slick-carousel' );
-    	wp_enqueue_style( 'slick-carousel-theme' );
+		wp_enqueue_style( 'slick-carousel-theme' );
 
 		wp_enqueue_script( 'starter-fse-theme-scripts' );
 		wp_enqueue_script( 'slick-carousel' );
@@ -212,5 +216,31 @@ class Assets {
 		$file_path = sprintf( '%s/js/%s', STARTER_FSE_THEME_BUILD_DIR, $file );
 
 		return file_exists( $file_path ) ? filemtime( $file_path ) : false;
+	}
+
+	/**
+	 * Localize post categories.
+	 *
+	 * @return void
+	 */
+	private function localize_post_categories() {
+		global $post;
+
+		$categories = get_the_category( $post->ID );
+
+		$localized_categories = array_map(
+			function ( $category ) {
+				return $category->name;
+			},
+			$categories
+		);
+
+		wp_localize_script(
+			'starter-fse-theme-scripts',
+			'starter_fse_theme',
+			array(
+				'categories' => $localized_categories,
+			)
+		);
 	}
 }

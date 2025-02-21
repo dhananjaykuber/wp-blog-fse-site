@@ -20,7 +20,7 @@ jQuery(document).ready(function ($) {
 		slidesToShow: 3,
 		slidesToScroll: 1,
 		arrows: true,
-		dots: true,
+		dots: false,
 		infinite: false,
 		speed: 500,
 		cssEase: "ease",
