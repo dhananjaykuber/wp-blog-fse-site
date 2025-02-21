@@ -77,6 +77,10 @@
 		font-size: $font-24;
 		outline: none;
 		padding-right: 20px;
+
+		@media screen and (max-width: $screen-md) {
+			font-size: $font-28;
+		}
 	}
 
 	&.is-style-category-list-dropdown-dark {

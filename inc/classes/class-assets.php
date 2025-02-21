@@ -95,7 +95,7 @@ class Assets {
 			true
 		);
 
-		if ( is_single() ) {
+		if ( is_single() || is_archive() ) {
 			$this->localize_post_categories();
 		}
 	}
@@ -224,16 +224,24 @@ class Assets {
 	 * @return void
 	 */
 	private function localize_post_categories() {
-		global $post;
+		$localized_categories = array();
 
-		$categories = get_the_category( $post->ID );
+		if ( is_single() ) {
+			global $post;
 
-		$localized_categories = array_map(
-			function ( $category ) {
-				return $category->name;
-			},
-			$categories
-		);
+			$categories = get_the_category( $post->ID );
+
+			$localized_categories = array_map(
+				function ( $category ) {
+					return $category->name;
+				},
+				$categories
+			);
+		} elseif ( is_category() ) {
+			$current_category = get_queried_object();
+
+			$localized_categories = array( $current_category->name );
+		}
 
 		wp_localize_script(
 			'starter-fse-theme-scripts',
