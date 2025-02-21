@@ -253,5 +253,9 @@
 				}
 			}
 		}
+
+		@media screen and (max-width: $screen-md) {
+			grid-template-columns: repeat(2, 1fr);
+		}
 	}
 }

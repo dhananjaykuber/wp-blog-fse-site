@@ -34,3 +34,23 @@ document.addEventListener("DOMContentLoaded", function () {
 		}
 	}
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+	const categoryList = document.querySelector("ul.wp-block-categories-list");
+
+	if (!categoryList) {
+		return;
+	}
+
+	const allPostsLi = document.createElement("li");
+	const allPostsLink = document.createElement("a");
+	allPostsLink.href = "/";
+	allPostsLink.textContent = "All Posts";
+
+	if (window.location.pathname === "/") {
+		allPostsLi.classList.add("current-cat");
+	}
+
+	allPostsLi.appendChild(allPostsLink);
+	categoryList.insertBefore(allPostsLi, categoryList.firstChild);
+});
