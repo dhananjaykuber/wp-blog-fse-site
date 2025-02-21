@@ -1,98 +1,17 @@
-# WordPress Starter Block Theme
+# WordPress Blog Block Theme
 
-A WordPress block starter theme with full site editing capabilities and organized asset management.
+### Home
 
-### Requirements
+![screencapture-localhost-10018-2025-02-21-21_12_28 (1)](https://github.com/user-attachments/assets/70801027-a159-4730-81df-ad5736211d65)
 
-- WordPress 6.0 or higher
-- PHP 5.7 or higher
-- Node.js and npm
+### Single blog
 
-### Directory Structure
+![screencapture-localhost-10018-random-post-20-2025-02-21-21_14_23 (1)](https://github.com/user-attachments/assets/d61c72e5-99c3-4b06-9706-e01955bf6889)
 
-```
-├── assets/                # Theme assets
-│   ├── build/             # Compiled assets
-│   ├── fonts/             # Custom fonts
-│   ├── images/            # Theme images
-│   └── src/               # Source files
-│       ├── blocks/        # Custom block source files
-│       ├── js/            # JavaScript files
-│       └── scss/          # SASS stylesheets
-├── inc/                   # Theme functionality
-│   ├── classes/           # PHP classes
-│   ├── helpers/           # Helper functions
-│   └── traits/            # PHP traits
-├── parts/                 # Template parts (header, footer)
-├── patterns/              # Block patterns
-├── templates/             # Page templates
-└── theme.json             # Theme configuration
-```
+### Category archive
 
-### Asset Structure
+![screencapture-localhost-10018-category-random-category-2-2025-02-21-21_14_51 (1)](https://github.com/user-attachments/assets/a5b742a9-b62d-4a2f-9bda-b81c04f7db50)
 
-The assets/src directory contains:
+###
 
-- `blocks/`: Custom block development files
-- `js/`: Theme JavaScript, split into editor and frontend
-- `scss/`: Organized stylesheet architecture
-  - `globals/`: Variables and base styles
-  - `utils/`: SCSS functions and mixins
-  - `templates/`: Template-specific styles
-
-### PHP Architecture
-
-The inc directory manages PHP functionality:
-
-- `classes/`: Core theme classes
-  - `class-assets.php`: Asset loading
-  - `class-blocks.php`: Block registration
-  - `class-theme.php`: Theme setup
-- `helpers/`: Utility functions and autoloader
-- `traits/`: Reusable PHP traits
-
-### Getting Started
-
-- Install dependencies: `npm install`
-- Build assets: `npm run build`
-- Development mode: `npm run start`
-
-### Creating Custom Blocks
-
-Run the block creation wizard:
-
-`npm run create:block`
-
-The wizard will guide you through:
-
-- Block Type Selection:
-
-  - Dynamic Block
-  - Static Block
-  - Server Side Rendered Block
-
-- Block Configuration:
-  - Title
-  - Slug
-  - Namespace
-  - Description
-  - Keywords
-  - Icon
-  - Text Domain
-  - Category
-
-#### Example
-
-```bash
-? What type of block would you like to create?
-1. Dynamic Block
-2. Static Block
-3. Server Side Rendered Block
-4. Exit
-
-? Enter the block title: (Example Block)
-? Enter the block slug: (example-block)
-? Enter the block namespace: (starter-block-theme)
-```
-
-Generated blocks are placed in `assets/src/blocks/[block-name]`
+#### Developed by [@dhananjaykuber](https://github.com/dhananjaykuber)
